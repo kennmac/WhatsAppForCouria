@@ -54,17 +54,6 @@ typedef NS_ENUM(SInt32, CouriaWhatsAppServiceMessageID) {
 @property(retain, nonatomic) NSDictionary *context;
 @end
 
-@interface SBApplication : NSObject
-- (BOOL)isRunning;
-- (BOOL)hasStartedLaunching;
-- (NSString *)containerPath;
-@end
-
-@interface SBApplicationController : NSObject
-+ (SBApplicationController *)sharedInstance;
-- (SBApplication *)applicationWithDisplayIdentifier:(NSString *)identifier;
-@end
-
 #ifdef __cplusplus
 extern "C" {
 #endif
