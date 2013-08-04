@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE2ADEA917ACC58D0080F89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2ADEA817ACC58D0080F89E /* Foundation.framework */; };
+		FE2ADEB317ACC58D0080F89E /* WhatsAppForCouria.mm in Sources */ = {isa = PBXBuildFile; fileRef = FE2ADEB217ACC58D0080F89E /* WhatsAppForCouria.mm */; };
+		FE2ADEBF17ACC84E0080F89E /* Couria.h in Headers */ = {isa = PBXBuildFile; fileRef = FE2ADEBE17ACC84E0080F89E /* Couria.h */; };
+		FE2ADEC317ACFF7A0080F89E /* BackBoardServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2ADEC117ACFF7A0080F89E /* BackBoardServices.framework */; };
+		FE2ADEC517ACFF950080F89E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2ADEC417ACFF940080F89E /* UIKit.framework */; };
+		FE2ADEC717ACFFBE0080F89E /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2ADEC617ACFFBE0080F89E /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE2ADEA517ACC58D0080F89E /* WhatsAppForCouria.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = WhatsAppForCouria.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2ADEA817ACC58D0080F89E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE2ADEB117ACC58D0080F89E /* WhatsAppForCouria-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhatsAppForCouria-Prefix.pch"; sourceTree = "<group>"; };
+		FE2ADEB217ACC58D0080F89E /* WhatsAppForCouria.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WhatsAppForCouria.mm; sourceTree = "<group>"; };
+		FE2ADEBD17ACC65A0080F89E /* Package */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Package; sourceTree = "<group>"; };
+		FE2ADEBE17ACC84E0080F89E /* Couria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Couria.h; sourceTree = "<group>"; };
+		FE2ADEC117ACFF7A0080F89E /* BackBoardServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackBoardServices.framework; path = System/Library/PrivateFrameworks/BackBoardServices.framework; sourceTree = SDKROOT; };
+		FE2ADEC417ACFF940080F89E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE2ADEC617ACFFBE0080F89E /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = /opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE2ADEA117ACC58D0080F89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2ADEC717ACFFBE0080F89E /* libsubstrate.dylib in Frameworks */,
+				FE2ADEC517ACFF950080F89E /* UIKit.framework in Frameworks */,
+				FE2ADEA917ACC58D0080F89E /* Foundation.framework in Frameworks */,
+				FE2ADEC317ACFF7A0080F89E /* BackBoardServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE2ADE9B17ACC58D0080F89E = {
+			isa = PBXGroup;
+			children = (
+				FE2ADEAA17ACC58D0080F89E /* WhatsAppForCouria */,
+				FE2ADEA717ACC58D0080F89E /* Frameworks */,
+				FE2ADEBD17ACC65A0080F89E /* Package */,
+				FE2ADEA617ACC58D0080F89E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE2ADEA617ACC58D0080F89E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE2ADEA517ACC58D0080F89E /* WhatsAppForCouria.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE2ADEA717ACC58D0080F89E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE2ADEC617ACFFBE0080F89E /* libsubstrate.dylib */,
+				FE2ADEC417ACFF940080F89E /* UIKit.framework */,
+				FE2ADEC117ACFF7A0080F89E /* BackBoardServices.framework */,
+				FE2ADEA817ACC58D0080F89E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE2ADEAA17ACC58D0080F89E /* WhatsAppForCouria */ = {
+			isa = PBXGroup;
+			children = (
+				FE2ADEBE17ACC84E0080F89E /* Couria.h */,
+				FE2ADEB217ACC58D0080F89E /* WhatsAppForCouria.mm */,
+				FE2ADEAF17ACC58D0080F89E /* Supporting Files */,
+			);
+			path = WhatsAppForCouria;
+			sourceTree = "<group>";
+		};
+		FE2ADEAF17ACC58D0080F89E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE2ADEB117ACC58D0080F89E /* WhatsAppForCouria-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE2ADEA217ACC58D0080F89E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2ADEBF17ACC84E0080F89E /* Couria.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FE2ADEA417ACC58D0080F89E /* WhatsAppForCouria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2ADEBA17ACC58D0080F89E /* Build configuration list for PBXNativeTarget "WhatsAppForCouria" */;
+			buildPhases = (
+				FE2ADEA017ACC58D0080F89E /* Sources */,
+				FE2ADEA117ACC58D0080F89E /* Frameworks */,
+				FE2ADEA217ACC58D0080F89E /* Headers */,
+				FE2ADEA317ACC58D0080F89E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhatsAppForCouria;
+			productName = WhatsAppForCouria;
+			productReference = FE2ADEA517ACC58D0080F89E /* WhatsAppForCouria.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE2ADE9C17ACC58D0080F89E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Qusic;
+			};
+			buildConfigurationList = FE2ADE9F17ACC58D0080F89E /* Build configuration list for PBXProject "WhatsAppForCouria" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE2ADE9B17ACC58D0080F89E;
+			productRefGroup = FE2ADEA617ACC58D0080F89E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE2ADEA417ACC58D0080F89E /* WhatsAppForCouria */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE2ADEA317ACC58D0080F89E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod sign $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\ncp -f $BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH $PROJECT_DIR/Package/$INSTALL_PATH/$EXECUTABLE_PATH";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE2ADEA017ACC58D0080F89E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2ADEB317ACC58D0080F89E /* WhatsAppForCouria.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FE2ADEB817ACC58D0080F89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				VALID_ARCHS = armv7;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		FE2ADEB917ACC58D0080F89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		FE2ADEBB17ACC58D0080F89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAppForCouria/WhatsAppForCouria-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		FE2ADEBC17ACC58D0080F89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhatsAppForCouria/WhatsAppForCouria-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE2ADE9F17ACC58D0080F89E /* Build configuration list for PBXProject "WhatsAppForCouria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2ADEB817ACC58D0080F89E /* Debug */,
+				FE2ADEB917ACC58D0080F89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE2ADEBA17ACC58D0080F89E /* Build configuration list for PBXNativeTarget "WhatsAppForCouria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE2ADEBB17ACC58D0080F89E /* Debug */,
+				FE2ADEBC17ACC58D0080F89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE2ADE9C17ACC58D0080F89E /* Project object */;
+}

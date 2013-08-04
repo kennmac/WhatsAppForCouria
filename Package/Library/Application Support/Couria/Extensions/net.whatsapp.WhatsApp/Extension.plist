@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>WhatsApp for Couria</string>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Everything only works when WhatsApp is running in the background. Turn on this option to make sure it is always running. It may decrease battery life.
+You can also choose to run WhatsApp yourself, but please note that it will be suspended in the background if you don&apos;t open it periodically.
+
+This is a more serious example extension for Couria. Source code available on Github (https://github.com/Qusic/WhatsAppForCouria).
+
+If you like my work, please consider donating. ;)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>defaults</key>
+			<string>me.qusic.whatsappforcouria</string>
+			<key>key</key>
+			<string>KeepAlive</string>
+			<key>label</key>
+			<string>Keep WhatsApp Running</string>
+			<key>default</key>
+			<false/>
+			<key>PostNotification</key>
+			<string>me.qusic.whatsappforcouria.UserDefaultsChanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© 2013 Qusic</string>
+		</dict>
+	</array>
+</dict>
+</plist>
