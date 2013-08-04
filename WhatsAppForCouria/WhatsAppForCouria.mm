@@ -169,10 +169,6 @@ typedef NS_ENUM(NSInteger, WhatsAppMessageType) {
 + (ChatManager *)sharedManager;
 @end
 
-@interface WhatsAppAppDelegate : NSObject <UIApplicationDelegate>
-- (void)updateUnreadBadge;
-@end
-
 #pragma mark - Globals
 
 static NSDictionary *userDefaults;
@@ -456,7 +452,7 @@ static CFDataRef messagePortCallback(CFMessagePortRef local, SInt32 messageId, C
     CFDataRef returnData = NULL;
     CFMessagePortSendRequest(remotePort(), GetNickname, data, 30, 30, kCFRunLoopDefaultMode, &returnData);
     NSString *nickname = [[NSString alloc]initWithData:(__bridge NSData *)returnData encoding:NSUTF8StringEncoding];
-	return nickname;
+    return nickname;
 }
 
 - (UIImage *)getAvatar:(NSString *)userIdentifier
@@ -468,7 +464,7 @@ static CFDataRef messagePortCallback(CFMessagePortRef local, SInt32 messageId, C
     CFDataRef returnData = NULL;
     CFMessagePortSendRequest(remotePort(), GetAvatar, data, 30, 30, kCFRunLoopDefaultMode, &returnData);
     UIImage *avatar = [UIImage imageWithData:(__bridge NSData *)returnData];
-	return avatar;
+    return avatar;
 }
 
 - (NSArray *)getMessages:(NSString *)userIdentifier
@@ -547,8 +543,8 @@ static CFDataRef messagePortCallback(CFMessagePortRef local, SInt32 messageId, C
     if (service == nil) {
         service = [[CouriaWhatsAppService alloc]init];
         localPort = CFMessagePortCreateLocal(kCFAllocatorDefault, CFSTR(WhatsAppForCouriaIdentifier), messagePortCallback, NULL, NULL);
-		CFRunLoopSourceRef source = CFMessagePortCreateRunLoopSource(kCFAllocatorDefault, localPort, 0);
-		CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+        CFRunLoopSourceRef source = CFMessagePortCreateRunLoopSource(kCFAllocatorDefault, localPort, 0);
+        CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
         ChatManager *chatManager = [NSClassFromString(@"ChatManager")sharedManager];
         contactsStorage = chatManager.contactsStorage;
         chatStorage = chatManager.storage;
@@ -573,14 +569,16 @@ CHDeclareClass(BKWorkspaceServer)
 CHOptimizedMethod(2, self, void, BKWorkspaceServer, applicationDidExit, BKApplication *, application, withInfo, id ,info)
 {
     CHSuper(2, BKWorkspaceServer, applicationDidExit, application, withInfo, info);
-    CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(), ApplicationDidExitNotification, NULL, NULL, TRUE);
+    if ([application.bundleIdentifier isEqualToString:WhatsAppIdentifier]) {
+        CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(), ApplicationDidExitNotification, NULL, NULL, TRUE);
+    }
 }
 
 #pragma mark - Constructor
 
 CHConstructor
 {
-	@autoreleasepool {
+    @autoreleasepool {
         NSString *applicationIdentifier = [NSBundle mainBundle].bundleIdentifier;
         if ([applicationIdentifier isEqualToString:SpringBoardIdentifier]) {
             Couria *couria = [NSClassFromString(@"Couria") sharedInstance];
@@ -596,5 +594,5 @@ CHConstructor
         } else if ([applicationIdentifier isEqualToString:WhatsAppIdentifier]) {
             [CouriaWhatsAppService start];
         }
-	}
+    }
 }
