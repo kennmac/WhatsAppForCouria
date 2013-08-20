@@ -11,7 +11,7 @@
 			<string>PSGroupCell</string>
 			<key>footerText</key>
 			<string>Everything only works when WhatsApp is running in the background. Turn on this option to make sure it is always running. It may decrease battery life.
-You can also choose to run WhatsApp yourself, but please note that it will be suspended in the background if you don&apos;t open it periodically.
+You can also choose to run WhatsApp yourself, but please note that it will be suspended in the background if you don&apos;t open it periodically. If you are using any tweaks that kill background apps automatically, please exclude WhatsApp.
 
 This is a more serious example extension for Couria. Source code available on Github (https://github.com/Qusic/WhatsAppForCouria).
 
