@@ -198,7 +198,7 @@ static void launchApp()
     if ([userDefaults[KeepAliveKey]boolValue] && !appIsRunning()) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^(void){
             [[UIApplication sharedApplication]launchApplicationWithIdentifier:WhatsAppIdentifier suspended:YES];
-            processAssertion = [[BKSProcessAssertion alloc]initWithBundleIdentifier:WhatsAppIdentifier flags:(ProcessAssertionFlagPreventSuspend | ProcessAssertionFlagPreventThrottleDownCPU | ProcessAssertionFlagAllowIdleSleep) reason:kProcessAssertionReasonBackgroundUI name:@WhatsAppForCouriaIdentifier withHandler:NULL];
+            processAssertion = [[BKSProcessAssertion alloc]initWithBundleIdentifier:WhatsAppIdentifier flags:(ProcessAssertionFlagPreventSuspend | ProcessAssertionFlagPreventThrottleDownCPU | ProcessAssertionFlagAllowIdleSleep | ProcessAssertionFlagWantsForegroundResourcePriority) reason:kProcessAssertionReasonBackgroundUI name:@WhatsAppForCouriaIdentifier withHandler:NULL];
         });
     }
 }
